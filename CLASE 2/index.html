@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    
+    <main>
+        <fieldset>
+            <legend>Datos personales </legend>
+        <form action="./resultado.html">
+        <div>
+            <label for="nombre"> Nombre </label>
+            <input type="text" maxlength="20" 
+            id="nombre" 
+            placeholder="nombre"
+            name="nombre"
+            required>
+        </div>
+        <div>
+            <label for="edad"> edad </label>
+            <input type="number"
+             min="0" max="100" 
+             id="edad" 
+             placeholder="escriba edad"
+             name="edad"
+             required>
+        </div>
+
+        <div>
+            <label for="mes">   mes </label>
+            <input type="number" 
+            min="0" max="8"
+            name="mes"
+            required>
+        </div>
+
+        <div>
+            <input type="range">
+        </div>
+<div>
+    <label for="phone">Telefono</label>
+    <input type="tel" 
+    id="phone
+    name="tel"
+    pattern="[0-9]{0-3} [0-9]">
+    
+
+</div>
+        <div>
+<label>fecha de nacimiento</label>
+<input type="date" 
+value="2000-01-31"
+required>
+        </div>
+
+     <div>
+        <label for="foto">foto</label>
+        <input type="file">
+     </div>
+     
+     <div>
+        <label>Nacionalidad</label>
+        <select name="nacionalidad" id="nacionalidad>
+           
+            <option value="chile">Chile</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="argentina"> Argentina</option>
+            
+        </select>
+     </div>
+
+     <div>
+        <label> T.C</label>
+        <span>SI</span>
+        <input type="radio"
+        name="tc"
+        value="si">     
+     </div>
+
+     <div>
+        <label>Turno</label>
+        <label>Mañana</label>
+        <input type="radio" name="turno">
+        <label>tarde</label>
+        <input type="radio" name="turno">
+        <label>Noche</label>
+        <input type="radio" name="turno">
+     </div>
+
+
+
+    <div>
+        <button>Enviar</button>
+    </div>
+        </form>
+    </fieldset>
+
+    <section>
+        <h3>loguin</h3>
+        <form method="post">
+<div>
+    <label>usuario</label>
+    <input type="text"
+    name="usuario"
+    required>
+</div>
+<div>
+    <label>password</label>
+    <input type="password"
+    name="password"
+    required>
+</div>
+
+        </form>
+    </section>
+    </main>
+</body>
+</html>
